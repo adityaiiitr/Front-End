@@ -1,0 +1,66 @@
+HTML 
+    => HyperText Markup Language
+    => It is one of the language which is used to create static documents which can be transferred through internet (Public Network).
+    => The current Version of HTML is HTML5.
+        Example Or Sample Number of Tags given Below(Untrue)
+            - HTML 1.0 => 20 Tags
+            - HTML 2 => 20 Tags
+            - HTML 3 => 35 Tags
+            - ...............
+            - HTML 5 => 100+ Tags
+                => Only Number of tags increased in new versions
+
+Structure Of HTML
+    Head Section
+        - Used By the browser and search Engines
+    Body section
+        - used to display the content to the user through a browser
+
+HTML Elements
+    => Opening Tag + Closing Tag + Some Content in b/w them.
+        ex: <p> + </p> + Hey I'm Aditya
+                <p>Hey I'm Aditya</p>  
+
+HTML Tags
+    => predefined keywords used to perform specific task.
+        Ex:  html - create a html document 
+             head - used to pass info to search & browser
+
+Basic Tags in HTML
+
+    --Self Closing Tags 
+        => These tags do not have closing tag instead the  / is added at the end of the opening tag itself.     
+            Ex: meta img br hr input, etc.
+
+    --Attributes 
+        => these are used to manipulate the proprties of a html element. they are used in the opening tag of html element.
+            Ex: <p style="color:red">Text<p/>
+            test will be red in color
+        =>Types of attributes:
+            1. Universal Attribute - You can Use these on any HTML Elements.
+                Ex: Styles, title, etc
+            2. Dedicated Attribute - You can use these only on the specific HTML Elememnts which has the attribute property
+                Ex: src is for im
+                    href for anchor tags, etc
+    -- The Width and Height should be given in % , px, cm,  em, inch,etc... (it is good practice to Use % or px only)
+
+    -paragraph => It is just normal text used to give the info in the form of sentences
+
+    -heading => It is highlighted text. there are 6 types (ex: h1,h2,h3 ... h6) 
+
+    -title => Used to give title in the tab of the browser
+
+    -meta => used to pass info to browser
+
+    -img => used to embed some images in the html document
+         Attributes: 
+            src
+            alt
+            width
+            height
+
+
+    -div
+    -span
+    -input
+    -anchor

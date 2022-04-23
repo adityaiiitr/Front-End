@@ -60,7 +60,56 @@ Basic Tags in HTML
             height
 
 
-    -div
-    -span
-    -input
-    -anchor
+    -div => It is called as a Block/Wrapper Tag.
+         => This Tag is used to Combine Different HTML Elements.
+         => Using this you can also divide your page into multiple layers.
+
+    -span => It is called as inline/inner Tag.
+          => This tag is inside an HTML elements.
+
+    -table => It is collection of rows and columns.
+           => A table will have heading at the top and data inside it.
+           => Table has 4 different tags
+                <table> - to create table
+                <th> - table heading(Column)The data will be bolder
+                <tr> - table row(x-axix)
+                <td> - table data/column(y-axis)
+
+    -anchor => This tag is part of link.
+            => It will take you to fifferent location/page.
+            <a> - anchor tag
+                href attribute - take the location
+                target attribute  - you can open the link in same or different tabs
+            Properties:
+             1. It will be underlined
+             2. Its blue in colour, when clicked it changed to red, 
+                when link is once clicked it changed to purple
+    
+    -list => It is collection of similar items displayed in a group. These are of 3 types:
+
+        Ordered List 
+            =>It is in the form of order. 
+            <ol> - ordered list 
+            <li> - Each item
+            By default it will be in numbers but we can also have it in uper case, lower case, roman upper and lower letter 
+            type attribute - Change the way it is numbered
+
+        Unorderd List
+            => It iwill be in form of some random points
+            => it has three different type - disc, circle & square
+
+        Description List
+            dl- desciption list
+            dt- description term/text/name
+            dd- description daat
+
+    HTML Form - It is used to colect some info or data from the user through the browser. Then this info we    can pass it to the server /back end.
+        <form> => this tag is used to implement the form
+    
+    -input => It is tag which is used inside the form element for collecting the data from the user
+    since the data is of different types: text, number, data, radio, file, checkbox, range, etc.
+    (radio for one selction with name attribute) 
+
+    
+    
+    

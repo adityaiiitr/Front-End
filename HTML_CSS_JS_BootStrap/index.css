@@ -1,0 +1,61 @@
+/*Universal Selector*/
+* {
+    background-color: azure;
+}
+
+body {
+    margin: 0px;
+    /*This took away the left margin try to remove this line and check the page*/
+}
+
+h1 {
+    color: green;
+}
+
+/*ID Selector*/
+#id1 {
+    color: blue;
+}
+
+#id2 {
+    color: orange;
+}
+
+/*Class Selector*/
+.class1 {
+    color: purple;
+}
+
+.class2 {
+    color: brown;
+}
+
+.boxmodel {
+    color: darkorange;
+    padding: 20px;
+    padding-left: 25px;
+    /*left margin only*/
+    border-width: 10px;
+    border-style: solid;
+    border-color: red;
+    margin: 10px;
+    margin-left: 25px;
+    /*left margin only likewise can do for top,bottom,left,right*/
+
+    /*for all three padding, margin and border likewise can do for top,bottom,left,right*/
+}
+
+/*Group Selector*/
+.one,
+.two {
+    color: lime;
+}
+
+/*Child Selector*/
+div p {
+    color: yellowgreen;
+}
+
+div h1 {
+    color: antiquewhite;
+}

@@ -31,6 +31,7 @@ h1 {
 }
 
 .boxmodel {
+    margin: top right bottom left;
     color: darkorange;
     padding: 20px;
     padding-left: 25px;
@@ -54,8 +55,45 @@ h1 {
 /*Child Selector*/
 div p {
     color: yellowgreen;
+    background-color: inherit;
 }
 
 div h1 {
     color: antiquewhite;
+}
+
+#dimension {
+    width: 30%;
+    height: 100px;
+    background-color: bisque;
+}
+
+#font {
+    font-family: Georgia;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#bg {
+    width: 100%;
+    height: 1000px;
+    background-color: chartreuse;
+    background-image: url(nature.jpg);
+    background-repeat: repeat-y
+        /*no-repeat -- repeat-x -- repeat-y*/
+    ;
+    background-size: 100%;
+
+    display: none;
+}
+
+p {
+    background-color: red;
+}
+
+span {
+    display: block;
+    /*Create a separate block -  display: block;
+     on same line - display: inline;*/
 }

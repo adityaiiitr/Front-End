@@ -1,0 +1,103 @@
+CSS - Cascading Style Sheet
+<style>
+
+What?
+ - It is used to describe how the HTML elements will look like.
+ - It is used to manipulate the properties of the HTML elements.
+ - It is used to implement style on HTML elements.
+
+How to Implement CSS?
+ - It can be implemented in 3 different approaches namely:
+   a. Inline CSS
+      - The style for the HTML elements is implemented in the opening tag of the HTML elements itself.
+      - By using the style attribute we Implement the inline css.
+      - It will also be in the form of "property_name:vale"
+      - if you have multiple properties then each propert should be separated by a ";"
+   b. Internal CSS
+      - The Style is implemented in inside the head tag as a content. 
+      - we use the style tag for implementing the internal css
+   c. External CSS
+      - The style for the HTML Element is implemented outside the HTML Document in a separated style sheet.
+      - a separate sheet with .css extension should be created.
+      - We use the link tag inside the head tag to connect the external style sheet with our HTML document
+Selectors
+  - These are used to select or find the HTML Elements from the document and implementthe css styles.
+        Element Selector - By using the HTML Element itself.
+        ID Selector - by defining a id attribute in html Element.
+        Class Selector - By defining a class attribute in the html elements.
+        Universal Selector - By using the * we can implement the properties for all the elements within the html document
+        child Selector - By using the space
+        Group Selector - by using the comma
+
+Comments in CSS
+    /* Your Comments HERE */
+
+Box Model - Margin,Border, Padding
+    => Every HTML Elementhas 3 different layers surrounding it.
+    => Top to bottom and left to right:
+    Margin-->Border-->Padding-->CONTENT<--Padding<--Border<--Margin
+    
+    Shorthand
+      margin: top right bottom left;
+      border-width: top right bottom left;
+      padding: top right bottom left;
+
+      border-width/border-style/border-color Shorthand
+      border: width style color;
+         border: 1px solid red;
+
+CSS Dimensions
+=> width - x axis - It is always fixed
+=> height - y axix - is unlimited
+
+for specifying the dimensions you can use different units:-
+px
+%
+cm
+mm
+em
+etc.....
+
+width: 50px .......values or inherit(It will inherit from its parent tag)
+
+      inherit example
+      body tag - width is 50 px
+         para tag - width as inherit since the parent tag i.e body tag it will inherit the width as 50px
+
+Font-Style
+=> This is basically on the content level
+=> by default the browser uses Times New Roman as font family. Now you can chamge this using this property.
+   font-style  -  Make the text bend a little bit or making it in terms of italic 
+   ex: italic and oblique
+   font-size - sizee of content. again it uses px,cm,mm,em,%, etc...
+   Ex: 10px, 1em etc... 
+   font-weight - to implement the bold property
+   Ex: bold, bolder, thin, etc...
+
+Background
+=> background-color  -   
+=> background-image  - background-image: url(location);
+=> backgroud-repeat  -   => your screen is 1000x1000
+         and image is 100x100 
+         In your screen how many image can we provide
+            in x-axis 10 images
+            in y-axis 10 images in total you will have 100 images 
+         this is not a good UX
+         we use background repeat to handle the repeatation of the image.
+=> background-size  -  100%
+
+   Shorthand property
+   background: color image_location repeat;
+
+Display
+=> It deals with ho wto display the element'=> 2  types of values are present
+   block Create a separate block -  display: block;
+   inline on same line - display: inline;
+   none - hides the tag elements - display: block;
+
+id v/s class
+=> The class starts with .classname and id starts with #idname
+=>you can pass multiple classes to a single HTML Elements 
+ex class='one two three'
+you can pass only one id to a single HTML Elements 
+ex id='one'

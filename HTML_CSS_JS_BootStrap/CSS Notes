@@ -101,3 +101,17 @@ id v/s class
 ex class='one two three'
 you can pass only one id to a single HTML Elements 
 ex id='one'
+
+position 
+=> It is used to specify positio n of a HTML Elements
+      static - default position that you came across when you create a HTML Documents
+      relative - The HTML elements position is decided by where it is placed in the HTML Document. This is normal
+      absolute - The HTML elements position is decided on its parent tag or ancestor tag
+
+
+ few more:---
+      fixed
+      sticky
+
+float: right/left;
+give width %percentage so that it adds upto 100% and it goes clockwise

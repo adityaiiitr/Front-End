@@ -1,0 +1,31 @@
+Bootstrap 
+=> it is a front end framework
+=> the framework is made up of different libraries
+=> these libraries are made up of css classes and javascript snippets
+initially the developer was responsible for declaring the styles, examples
+<p class="one"> Hello!</p>
+.one{
+    background-color:red;
+}
+team is it good idea for wasting the developer time on declaring the styles 
+instead of working on the logic not on styles
+
+now the answer for this was Bootstrap
+
+Bootstrap: It is a framework with prdefined CSS classes and prdefined javascript snippets
+
+=> Now we have 5th version of Bootstrap=> By using the bootsrap framework we can create responsive websites.
+    =>the same code will be adopted to any screen size.
+    =>watch,tab,tv,mobile phone,.....etc
+
+Q. Before Bootsrap how to create reponsive websites...
+=> Yes before this we had concept called CSS media queries. Which was used to define the code for different screen size.
+ex: for 6 diff device you have to create 6 diff logic with screen size.
+
+Q. Is there any similar framework like bootstrap?
+=> Yes we do similar frameworks like bootstrap namely:
+1.material UI
+2.Tailwind CSS 
+etc....
+
+Bootstrap was the first and it is like a mother to all other frameworks.

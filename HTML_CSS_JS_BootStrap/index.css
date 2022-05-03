@@ -1,18 +1,35 @@
-/*Universal Selector*/
+#div1 {
+    width: 50%;
+    height: 100px;
+    float: left;
+    background-color: red;
+
+}
+
+#div2 {
+    width: 50%;
+    height: 150px;
+    background-color: yellow;
+
+    float: right;
+}
+
+
+
+/*
 * {
     background-color: azure;
 }
 
 body {
     margin: 0px;
-    /*This took away the left margin try to remove this line and check the page*/
+    
 }
 
 h1 {
     color: green;
 }
 
-/*ID Selector*/
 #id1 {
     color: blue;
 }
@@ -21,7 +38,7 @@ h1 {
     color: orange;
 }
 
-/*Class Selector*/
+
 .class1 {
     color: purple;
 }
@@ -35,24 +52,21 @@ h1 {
     color: darkorange;
     padding: 20px;
     padding-left: 25px;
-    /*left margin only*/
     border-width: 10px;
     border-style: solid;
     border-color: red;
     margin: 10px;
     margin-left: 25px;
-    /*left margin only likewise can do for top,bottom,left,right*/
-
-    /*for all three padding, margin and border likewise can do for top,bottom,left,right*/
+    
 }
 
-/*Group Selector*/
+
 .one,
 .two {
     color: lime;
 }
 
-/*Child Selector*/
+
 div p {
     color: yellowgreen;
     background-color: inherit;
@@ -81,7 +95,7 @@ div h1 {
     background-color: chartreuse;
     background-image: url(nature.jpg);
     background-repeat: repeat-y
-        /*no-repeat -- repeat-x -- repeat-y*/
+
     ;
     background-size: 100%;
 
@@ -94,6 +108,4 @@ p {
 
 span {
     display: block;
-    /*Create a separate block -  display: block;
-     on same line - display: inline;*/
-}
+}*/

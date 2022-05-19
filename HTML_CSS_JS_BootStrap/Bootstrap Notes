@@ -29,3 +29,105 @@ Q. Is there any similar framework like bootstrap?
 etc....
 
 Bootstrap was the first and it is like a mother to all other frameworks.
+
+Concepts to be covered 
+
+    what?
+    => BS is Front end Framework which is made up of HTML CSS and JavaScript.
+    => It Helps us in building responsive website.
+    => Responsive websites - A website getting autoatically adjusted based on the screen size in which you are accessing the webpages
+        ex: watch ,mobile TV laptop desktop etc.
+
+    why?
+    => 6 different devices are present .... if BS is not there then we have to build 6 different css files for differenrt screen size  
+    => Because of Various readymade snippets available.
+
+    How to implement bootstrap in html document 
+    => Remember BS is nothing but it is has predefined css properties & JS Code.
+    => To invoke .....
+
+
+    Containers
+    => It is used to hold something together.
+    
+    container class - similar to 80% width and left and right 10% space in left as it is.
+
+    container fluid - it is 100% width is occupied.
+
+        container class => Space at the left and right
+        container-fluid class => No space at left and right
+
+    Grid System/Layout 
+    => This concept is very important beacuse the responsive depends on this grid.
+
+    1 row - 1 column => col-12
+    1 row - 3 column => col-4
+    1 row - 6 column => col-3
+    
+
+    for ex: 
+    Laptop - 12 columns, 1 row
+    Tab - 6 columns, 1 row but it gets 
+        adjusted automatically into 2 rows
+    Moble - 3 columns 1 Row but it gets     automatically into 4 row
+    Watch -  1 column 1 row but it gets adjusted automatically into 12 rows.
+
+    Typography
+
+        h1, h2, h3, h4, h5, h6
+        in h1 tag we learnt a new class called as display-1, display-2 .... display-6
+
+        <h1 class="display-1">Hello</h1>
+
+        p, a, mark, del, ins, b, i, strong, etc.
+
+
+    Colors
+        for adding colours to text i.e content => text-primary => blue
+        success(green), warning(orange), dark, light, info, secondary, grey etc...
+
+        for adding background colour to the background => bg-primary, bg-success
+
+        Text
+        => text-success, text-warning
+            <div>
+            <p class="bg-primary">Hello!</p>
+            <p class="text-primary">Hello!</p>
+            <p class="text-primary bg-warning">Hello!</p>
+            </div>
+
+    Tables
+    <table class="table" style="border:1px solid red"></table>
+
+    Images
+    <img src="#" alt ="" width ="" height="" class="">
+
+    Shaping the images -
+        rounded 
+        rounded-circle
+        img-thumbnail 
+        
+
+    placement of images - float-start, float-end
+
+    for centre - we have to use two different concepts namely margin and display concept
+                    mx-auto d-block - margin x-axis display block
+
+    Buttons
+    => btn btn-primary
+    => btn btn-outline-primary
+    => btn-sm, brn-lg and the default is medium
+
+    Pagination
+    => class="pagination page-item page-link"
+    => list tag - ul li
+    => pagination-sm, pagination-lg and the default is medium
+    => aligning - x-axis movement
+            justify-content-start => left =deafult
+            justify-content-centre => centre
+            justify-conent-end => right
+    => If you need space betwwen pagination using padding concept class="p-2"
+
+    Progress BAr
+    => class="progress progress-bar" class="progress-bar" in another div this need style width 
+    => we will use the style attribute to mention the progress using the width property

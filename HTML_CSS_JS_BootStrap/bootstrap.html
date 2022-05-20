@@ -11,6 +11,10 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <title>Hello, world!</title>
+
+    <!--Bootstrap Icons CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
 </head>
 
 <body>
@@ -127,6 +131,132 @@
     </div>
     <br>
     <br>
+    <div class="card">
+        <div class="card-header">
+            Card Demo
+        </div>
+        <div class="card-body">
+            <img class="card-img" style="width: 100px; height: 150px;" src="page.webp" alt="A4_Sheets_Image">
+            <h2 class="card-title">A4 Sheets </h2>
+            <p class="card-text">From 700 Rupee Onwards</p>
+
+            <button class="btn btn-primary">Click Here</button>
+        </div>
+        <div class="card-footer">
+            Card Footer
+        </div>
+
+    </div>
+    <br><br>
+    <div id="mySlider" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <!--Add Card here instead of image to get card carousel--><img class="d-block w-100" src="nature.jpg"
+                    alt="crousel_image">
+            </div>
+            <div class="carousel-item"><img class="d-block w-100" src="nature.jpg" alt="crousel_image"></div>
+            <div class="carousel-item"><img class="d-block w-100" src="nature.jpg" alt="crousel_image"></div>
+
+        </div>
+        <button class="carousel-control-prev" data-bs-target="#mySlider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" data-bs-target="#mySlider" data-bs-slide="next"><span
+                class="carousel-control-next-icon" aria-hidden="true"></span></button>
+
+    </div>
+    <br><br>
+    <div class="dropdown">
+        <button class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">
+            Select an Item!
+        </button>
+        <ul class="dropdown-menu">
+            <li class="dropdown-item">Apple</li>
+            <li class="dropdown-item">Banana</li>
+            <li class="dropdown-item">Orange</li>
+            <li class="dropdown-item">Guava</li>
+        </ul>
+    </div>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <br><br>
+    <div class="container">
+        <form>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <br>
+
+            <input type="file" class="form-control">
+
+        </form>
+    </div>
+    <br><br>
+    <i class="bi bi-facebook"></i>
+    <i class="bi bi-twitter"></i>
+    <i class="bi bi-linkedin"></i>
+    <i class="bi bi-google"></i>
+    <br> <br>
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-outline-info ">Left</button>
+        <button type="button" class="btn btn-danger">Middle</button>
+        <button type="button" class="btn btn-sm btn-primary">Right</button>
+    </div>
+    <br><br>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->

@@ -128,6 +128,63 @@ Concepts to be covered
             justify-conent-end => right
     => If you need space betwwen pagination using padding concept class="p-2"
 
-    Progress BAr
+    Progress Bar
     => class="progress progress-bar" class="progress-bar" in another div this need style width 
     => we will use the style attribute to mention the progress using the width property
+
+    cards 
+    => Similar to a id card - image heading paragraph and some description
+        class list
+        card
+        card-body
+        card-header
+        card-footer
+        card-title
+        card-link
+
+    carousel
+    => It is slider
+
+                CSS
+        crousel 
+        carousel-inner
+        carousel-item
+        carousel-control-prev
+        carousel-control-next
+
+                JavaScript
+        data-bs-target - It is a attribute. This attribute will match the given id to the elements which has the class carousel
+
+        data-bs-slide - This is used to control the flow of image inside the slider
+
+        data-bs-ride - It is an attribute. It is used for initialization of your slider
+
+    Dropdown
+    => It is similar to select tag but here in bootstrap it is implemented using the list tags or anchor tags 
+        dropdown
+            btn
+            dropdown-menu
+            dropdown-item
+            dropdown-toggle => arrow symbols
+
+        dropdown-bs-toggle => It is a attribute. It is used to pick the items and display them below as a dropdown
+
+    navbar 
+    => It is a menu
+
+    mb -margin bottom == mb-10 means margin bottom 10px
+    me - margin east(right)
+    mt - margin top
+    
+
+    forms 
+    =>
+
+    Bootstrap Icons 
+        => (search on google bootstrap icons cdn) add the link tag before the closing of head tag 
+        => icon cdn and you have to use the bi class
+
+    Button Groups
+        => Similar to 
+
+    Assignment No 2

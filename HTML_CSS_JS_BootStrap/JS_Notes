@@ -1,0 +1,79 @@
+Javascript
+    => It is a Object Oriented Language
+    => This language ius used to build dynamic web pages
+    => we can change the behaviour of web pages
+    => The current newly launched javascript version is Javascript version 9
+    But majority everyone are using JS VErsion 6 (2015)
+
+why?
+    => Since this language can be used in both front end and back end to build complex dynamic web application.
+    => It is simple and easy to learn
+    => since it is object oriented we can use this language to build complex dynamic web application 
+    => open source - n number of libraries written in js that you can use to build your web application 
+
+Features
+    => validation of user input
+    => handle errors
+    => resuse of the code 
+    => object oriented language
+
+Differnt approaches To implement JS -
+    Internal - Inside Body tag
+    Internal - Inside Head Tag
+    Internal - Inside HTML Tag
+    External - Separate Script File with The extension .js
+
+    => Best Practice is to add JS in body before closing tag nad the worst practice is to add it in html tag
+
+href is used to connect to a data file (hence 2 files)
+src embeds the data file to current file (hence single file)
+
+Comments
+    => // This part is commented
+
+        // Single Line Comments
+
+        /* Multi
+         Line Comments */ 
+
+Variables
+    =>It is  a name given to a memory location
+    => This memory location is used for storing the data
+
+    NAming Convention
+        - Name should not start with a number
+        - name should always start with a ltter $ or _ 
+        - You can use the combination of number, letter, _ and $
+        - Variables are case sensitive 
+                x
+                 is not same as X
+
+    How to declare a variable 
+    - using the 'var' keywor
+    - using the 'let' keyword
+    - using the 'const' keyword
+
+        Syntax: 
+            var Variable_Name = Value;
+
+        var
+            => It is used to declare a global variable
+            => It is old so works in old browser
+
+        let 
+            => It is used to declare a gloabal as well as locat variable
+            => In 2015, this was introduced
+
+        const
+            => It is also global or local
+            => In 2015, this was introduced
+
+        Examples: 
+
+        const a =10;
+        a=15; //error
+
+        var a=10; //Number datatype
+        a="String" // changed data type and value
+
+From ES 6 It is not mandatory to add ; to define the end of statement. The compiler is smart enough to differentiate the end of line. It can also understand what type of data variable has

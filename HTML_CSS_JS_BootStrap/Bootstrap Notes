@@ -152,7 +152,7 @@ Concepts to be covered
         carousel-control-prev
         carousel-control-next
 
-                JavaScript
+             JavaScript
         data-bs-target - It is a attribute. This attribute will match the given id to the elements which has the class carousel
 
         data-bs-slide - This is used to control the flow of image inside the slider

@@ -22,6 +22,7 @@ Differnt approaches To implement JS -
     Internal - Inside Head Tag
     Internal - Inside HTML Tag
     External - Separate Script File with The extension .js
+            another approach - inline - inside a HTML tag itself
 
     => Best Practice is to add JS in body before closing tag nad the worst practice is to add it in html tag
 
@@ -40,7 +41,7 @@ Variables
     =>It is  a name given to a memory location
     => This memory location is used for storing the data
 
-    NAming Convention
+    Naming Convention
         - Name should not start with a number
         - name should always start with a ltter $ or _ 
         - You can use the combination of number, letter, _ and $
@@ -76,4 +77,276 @@ Variables
         var a=10; //Number datatype
         a="String" // changed data type and value
 
-From ES 6 It is not mandatory to add ; to define the end of statement. The compiler is smart enough to differentiate the end of line. It can also understand what type of data variable has
+Data Types 
+    => It will get us the type of data which is used for further operations.
+    => Number, string, object, boolean, undefined, null, NaN(Not a Number), Array, Etc
+
+    - To find the datatype of a given variable or given value we can use the inbuild operator called typeof operator
+         ex: typeof(value or variable)
+
+
+
+Operators
+    => It is used to perform or execute a logic 
+    => Types
+    Arithematic Operator 
+        +  -  /  %  *  **(exponent)  ++(increment)  --(decrement)
+
+    Comparision Operator(Relational Operator)
+    ==   !=  >   <   >=   <=
+    ===   !==
+
+            var a= 5 //datatype = number, value= 5
+            var b= "5" //datatype = number, value= 5
+
+            a==b // value of a == value of b its true
+            a===b // compares both datatype and value its false 
+    Bitwise Operator 
+            &(AND)  |(OR)  ^(XOR)  ~(Compliment)  >>(right shift operator)   <<(left shift operator)
+
+            ~3 => ~011 => 100 => 4 (WRONG IN JAVASCRIPT)
+            
+            Number Line
+                => The positive cycle starts from 0
+                => Teh negative cycle starts from -1
+
+                -5 -4 -3 -2 -1 0 1 2 3 4 5 
+            
+            ~6 => -7
+            ~3 => -4 (This is what we get in JS)
+
+            var a=2
+            00000000 00000000 00000010
+
+            a<<2 = 00001000 = 8
+            => left shift operator 
+            => you should drop digits from left side
+            => you should drop digits from right side
+
+            a>>2 = 00000000 = 0
+            => left shift operator 
+            => you should drop digits from right side
+            => you should drop digits from left side
+
+    Logical Operator
+        &&(and)  ||(or)  !(not)
+
+    Assignment Operator 
+    =   +=  -=   /=   %=   &=   |=   *=   ^=
+
+    Ternary Operator
+    condition
+    ?
+    if true this statement will get executed
+    :
+    if false this statement will get executed
+
+    Misc Operators....
+
+Desicion Statements
+    if 
+    if else
+    if else ladder
+    switch
+
+    => Nested if similar to the and operato also acts as filter
+
+Loops
+    while
+    do while 
+    for
+
+    for In
+        => this loop is dedicated only for objects
+         Ex: let a={name: "Aryan", age: 21, salary: 200}
+
+         for(let z in a)
+         {
+             console.log(z) //key
+             console.log(object_test[z]) //values
+         }
+
+    for Of
+        => this loop is dedicated only for strings or arrays
+
+
+JS Objects
+    => It is just a wrapper which will hold different values.
+             {key:value,key:value} 
+        Ex: let a={name: "Aditya", age: 20, salary: 2000000}
+    => For every value there is  key.
+    => Each key value is separated by :
+    => Ecery key value pair is separated by comma
+    => The key is never enclosed in '' or ""
+    => the value are enclosed in '' or "" only if it is string or character
+
+    How to access the particular value?
+    => objectName.keyName
+
+
+// Beginning Of Intermediate Concepts
+
+
+JS functions
+    => Thse blocks of code which when invoked will execute the block.
+    => to implement reusable code.
+    => Syntax:
+
+    function func_name(arguments)
+    {
+        //code
+    }
+
+JS Events
+    => they are action that can be performed by the user on the HTML Elements.
+    => ex: mouseover mousein onchange
+
+JS arrays
+    => Collection of similar datatypes i.e data items
+    => collection of similar type of data. 
+    => array will allocate continuos memry location 
+    =>  item - individual data
+        index - always starts from 0
+        position - always starts from 1
+
+        Syntax: 
+            let abc= ["Apple","Banana","Mango", "Grapes"]
+
+            items count = 4 = length of the array
+            position count = 4
+            index count = 3 length-1
+
+        ///ho wto access an item -> arrayname[index number]
+        abc[1] => Banana
+
+
+JS Array methods
+    =>Inbuild Methods - are used to perform some       functions or methods.
+    ex: toString() - method => convert the array to string
+        push() - insert item inside array
+        pop() - remove item fro array
+        shift() - removes the first item & and other items index number is reduced by 1
+
+        unshift() - add a new item at 0th index and the other items index number is increased by 1
+
+        slice method - it is uded to divide the array into 2 parts
+
+
+    => Properties of Array - 
+            index, length - gives the total no of itmes present in an array
+
+JS Strings
+    => collection of characters
+    => we can use ' or" to create a string
+    let a = "ddddddd"
+    let a= ""  // empty string
+    let a = " " //string with single character 
+
+JS String methods
+    => Inbuild Methods
+            concatenation ->  + operator
+            slice() -> to divide the string
+            toUpperCase() -> upper case
+            toLowerCase() -> lower case
+            charAt() -> you will pass the index and it will print the character
+            split() -> split the string based on character and forms an ARRAY
+
+            remove, replace,find ,findindex,etc
+
+    =>  Properties of Strings
+            index, length, 
+
+    \n      
+    \'       Escape seq
+    \"      
+    \b    
+
+JS Number Methods
+    toString() - number is converted into string 
+    isInteger() - it checks the given number is a integer or not 
+    toExponential() - e symbol will be added
+    toPrecision() - similar to round of number.
+    isNaN() - it checks whether the given number is NaN
+    valueOf(), toFixed(), etc.
+
+JS Date
+    => 
+JS Date Formats
+    => the set methods
+    setDate() 1 to 31
+    setFullYear()   0 to 11 months and yaers are optional
+    setHours()
+    setMinutes()
+
+JS Math Library
+    => this library has predefined methods which perform a specific task
+
+    round - it round adta to nearest integer
+    floor - step down
+    ceil - step up
+    pow -  2 arguments
+    sqrt() - 
+    min(a1,a2,...) - it will return the lowest value
+    max(a1,a2.....)
+    random()
+    //sin cos tan - using this can get value
+
+// 35 Questions based on JS.
+
+JS Error Handling
+    => try statement - inside this block we will define the logic that we want to execute 
+    => catch statement - the logic inside the try statemnt if it generates some error then this error is handled by the catch statement
+    => finally - whether the code generates a error or it gets executed the finally block will be called no matter what.
+
+    => throw keyword - used to throw the error from on place to another or it is also used to throw error messages to the user.
+
+
+
+function myerroe(){
+    try
+    {
+        console.log("India
+    }
+    catch(err) //err is variable to store the error from try block
+    {
+        console.log("Logic 1 is Wrong")
+    }
+    //second line to check
+    try
+    {
+        console.lo("India)
+    }
+    catch(err)
+    {
+        if(err) throw err 
+        console.log("Logic 2 is Wrong")
+    }
+    finally{
+        console.log("Executed Perfectly")
+    }
+}
+
+ NOTE: as soon as the error in try block is encountered the next lines inside the will not be executed(skipped)
+
+
+JS Best Practices
+https://code.tutsplus.com/tutorials/24-javascript-best-practices-for-beginners--net-5399
+
+
+JS Object Oriented Concepts
+ES5 Concepts
+ES6 Concepts
+
+Control Statements 
+    break
+    continue
+    return
+
+    rest other are not available like
+                label(C), goto(C), pass(python)
+
+
+
+From ES 6 It is not mandatory to add ; to define the end of statement. The compiler is smart enough to differentiate the end of line. It can also understand what type of data variable has.
+
+

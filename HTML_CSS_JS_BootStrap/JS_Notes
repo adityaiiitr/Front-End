@@ -333,9 +333,6 @@ JS Best Practices
 https://code.tutsplus.com/tutorials/24-javascript-best-practices-for-beginners--net-5399
 
 
-JS Object Oriented Concepts
-ES5 Concepts
-ES6 Concepts
 
 Control Statements 
     break
@@ -350,3 +347,8 @@ Control Statements
 From ES 6 It is not mandatory to add ; to define the end of statement. The compiler is smart enough to differentiate the end of line. It can also understand what type of data variable has.
 
 
+ ------New File Created -----
+JS Object Oriented Concepts
+ES5 Concepts
+ES6 Concepts
+ ------New File Created -----

@@ -1,0 +1,77 @@
+OOPS Concept
+
+=> Before OOPS we had procedure oriented programming language or structural programming language.
+        In these pops we were able to represent a very simple data.
+        These lang had very less features.
+        This lang had some disadvantage such as could not represent the real problem faced by people.
+
+=> OOP language
+    -> More Feature Lang
+    -> Represent Real Problems and we were able to get the solutions for the real problems that we were facing.
+
+=> Terminologies
+    -> Objects- its real world entity
+            ex Laptop chair Desk Desk-Lamp etc
+       Each object will have its own properties (variable/object/array) and it has methods(These are representation of the behaviour of the object)
+
+    -> Class - collection of objectsproperties and its  methods. It is a wrapper or it is a container or a class is a blueprint or a template of an object which will hold the properties or methods
+
+#Every class can have multiple objects
+
+Inheritance - Reusable
+
+Polymorphism - Doing the same task in different ways
+        overloading
+        overRiding
+
+Abstraction - Hiding the Internal Functionality from the users view
+
+Encapsulation - This is a wrapperor container or binding the code together into a single unit
+
+Constructor 
+    This is a method.
+    it is triggered when a object for a class is created.
+    it will allocate the properties and the methods of the class to the object.
+
+Super method => it is a method which will invoke        the            parent class constructor
+    this method can also be used to carry the data from the child class to the parent class
+
+this keyword
+    it is a reference. it refers to the object within the scope.
+    usually we use this keyword to refer a global object within a class
+
+ES5 Concepts
+    => It is Javascript Version 5.
+    => They introdused many methods for arrays
+        such as map,filter,reduce,foreach,ETC
+    => Handling of JSON Data
+        parse and stringify
+
+JSON
+=> Javascript object Notation
+=> It is a data format
+=> it is used to store the data 
+=> it is used to transport data from one end to another end
+=>  you can also manage the data using JSON
+=> It is similar to javascript objecrt but some difference are there
+
+    1. The key in json is enclosed in ' or "
+    2. the key value pair is enclosed in {}
+    3. Every key value pair is separated by ,
+    4. The key value is separated by a :
+
+    {
+        "key :"value , .....
+    }
+
+Callback Functions
+=> When wer pass a function as a argument to another function
+    ex
+    let b = a.map(myFunction)
+    function myFunction(item) { 
+    return item * 5
+    }
+
+ES6 Concepts
+
+

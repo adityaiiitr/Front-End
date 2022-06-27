@@ -101,7 +101,7 @@ function myFunction(myReduce, item) {
 }
 document.getElementById("myId").innerHTML = b
 */
-
+/*
 //REDUCE METHOD
 let a = [1, 2, 3, 4, 5]
 let b = 0
@@ -113,3 +113,50 @@ function myFunction(item) {
 }
 
 document.getElementById("myId").innerHTML = b
+
+*/
+/*
+//JSON Illustration
+
+//js object
+let jsObject = { name: "raghu", age: 32 }
+let a = JSON.stringify(jsObject)
+document.getElementById("myIdJS").innerHTML = a
+console.log(jsObject)
+
+//json object
+let jsonObject = { "name": "raghu", "age": 32 }
+let b = JSON.stringify(jsonObject)
+document.getElementById("myIdJSON").innerHTML = b //here instead of b place jsonObject then data is not being printed
+console.log(jsonObject)
+
+console.log(typeof (b))
+
+let myStringToObject = JSON.parse(b)
+console.log(typeof (myStringToObject))
+
+*/
+/*
+function abc() {
+    console.log("Normal Function")
+}
+
+def = () => console.log("Arrow Function")
+ghi = (a = 10, b = 20) => console.log(a + b)
+*/
+/*
+//Callback Function
+
+b = (arg1, aFunction = () => 5) => arg1 + aFunction()
+//Optimized Code! time complexity decreases
+
+console.log(b(10)) //15 in console
+*/
+//Callback Chaining
+a = () => 6
+b = fun2 => 5 + fun2
+c = (arg1, fun1, fun3) => arg1 + fun1(fun3)
+console.log(c(5, b, a)) //15 in console
+
+c = (() => console.log(6))
+console.log(c)

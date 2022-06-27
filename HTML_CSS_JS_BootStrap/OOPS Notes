@@ -64,14 +64,83 @@ JSON
         "key :"value , .....
     }
 
-Callback Functions
-=> When wer pass a function as a argument to another function
-    ex
-    let b = a.map(myFunction)
-    function myFunction(item) { 
-    return item * 5
-    }
+    parse 
+    => It will convert the JSON object into Javascript Object
+
+    stringify
+    => It will convert JSON object into a string
+
 
 ES6 Concepts
+    => It is Javascript Version 6.
+    => keyword : let and const was introduced
+    => Arrow Functions
+    => Promises
+    => Map Object & Set Object
+    => They introduced many methods for arrays and strings
+        find(), etc..... String.startswith(), String.endswith(),etc....
 
 
+Arrow Function
+    => It is a shorthand property to define a function
+    => Certain condition needs to be followed 
+    1. No need to use the function keyword
+    2. if you have only one argument then no need to use/enclose it with () braces
+    3. No need to use the statement within the {} braces
+    4. In arrow function no need to use return keyword
+    5. The func_name will be defined as a variable and the function definition will be stored as a value inside the variable
+    6. we should use the => b/w the argument and the statement
+
+
+    function abc(a){
+        console.log(a)
+    }
+
+    abc = a => console.log(a)
+
+
+    function abc(a,b){
+        return a+b
+    }
+
+    abc = (a,b) => a+b 
+
+     function abc(a,b){
+        console.log(a)
+        console.log(b)
+        return a+b
+    }
+
+    abc=(a,b)=>{
+        console.log(a)
+        console.log(b)
+        return a+b
+    }
+
+    a=()=>{}
+
+    a is the function name
+    () => {} the function definition
+    Use a to call the function
+
+   
+    Callback Functions
+    => When wer pass a function as a argument to another function
+        ex
+        let b = a.map(myFunction)
+        function myFunction(item) { 
+        return item * 5
+        }
+
+    Callback Chaining
+    => You have Multiple Callback within another callback......
+
+    Callback Hell
+
+    Promise
+
+    Promise Chaining
+
+    async and await
+
+    keyword

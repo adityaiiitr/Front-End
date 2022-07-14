@@ -1,0 +1,177 @@
+Nodejs
+    Backend development
+        -> Server Side
+        -> Javascript, python php,java, etc.... - any one of these programming language can be used to build a application
+        -> FrontEnd(Browser) -> user access the browser and performs some action = a request is created and sent to the back end - in the back end we have created some logic which will be executed generating a result = this result is provided to the browser as a response.
+
+what is Nodejs?
+    => Ryan introduced Nodejs
+    => Nodejs was a server 
+    => Nodejs is a runtime environment where JS can be executed
+    => chrome's V8 Engine - Google Company
+        microsoft Edge - Charkha
+        firefox - Spidermonkey
+
+    Before Nodejs came into existense JS was functioning synchronously
+     Ryan = V8 Engine + Code(implement JS Asynchronously) = NodeJS
+
+     NodeJS has the capacity to execute JS Asynchronously
+
+----- Install NodeJS -----
+
+     In CMD check if it is installed properly
+     node --version
+     npm --version
+
+NPM
+     => It is a tool which is a part of Node software
+     => it stands for node package manager
+     => Th npm tool manages all the packages on behalf of Node 
+        packages- dependencies/libraries/modules, etc...
+
+Create a Node Project
+    in CMD
+    npm init - used to create  a node
+    or
+    npm init -y  => it will automatically create a node  with default values
+
+    node index.js => it runs the script file inside package.json
+
+
+package.json
+     => this file is created whenever we try to createa node project. it has two types of data
+     1. Information based data - info
+     2. Functinal data - functional value
+
+Single Threaded & Multi Threaded 
+     Single Threaded 
+        => a single threaded /process/task is created or executed at once
+        => serial process
+        => Time Consuming
+        => Deadlock is not at all possible
+     
+    Multi Threaded 
+        => a multi threaded /process/task is created or executed at once
+        => parallel process
+        => faster compared to single threaded
+        => DeadLock is possible
+
+Import & Export
+ES5 - Nodejs
+const abc = require("dependencies_name")
+export.default =abc
+
+    To use ES6 import & export syntax in Node we just have to add a key value pair inside the package.json file
+        "type":"module"
+
+ES6 - Reactjs
+import abc from 'dependencies_name'
+export default abc
+
+
+Modules 
+    => Packages/Dependencies/Function etc.
+    Types - 3 Different types of modules are presnt namely
+    1. Core Modules 
+        - These Modules are part of Nodejs
+        - These modules are predefined/inbult in Nodejs
+
+    2. User Defined Modules
+        -these modules are created by the user /Developer
+
+    3. MPM Managed Modules
+        - these modules are manged by npm tool
+
+    Core Modules
+        OS - operating system - using this modules we can get information about operating system
+
+        FS - File System - Using this module you can manage the life cycle(read,delete,updating,etc....) of a file.
+
+        HTTP - hypertext transfer protocol - using this module you can create server
+
+        Buffer - Memory Optimization 
+
+        processargv - used to capture the argument that are passed during the run time
+
+        path - used to read URL
+        etc....
+
+    User Defined Modules
+        -> create another js file called as arithematic
+        -> Inside this file create 4 different methods adds, sub,mul and div
+        -> lets import this module/file into index.js
+        
+        exports.myAdd = function (a, b) {
+        return a + b
+        }
+
+        var user = require('./arithematic')
+        console.log(user.myAdd(1, 2))
+
+    NPM managed Modules
+
+        1. nodeman => It is a package which will automatically execute a node project whnever the user saves the file within the project 
+
+            npm install nodemon
+            npm install -g nodemon (it install this module to your own modules)
+
+             "start": "node index.js" --Add this to package.json
+
+            Node_modules folders - package-lock.json file
+
+        2.Chalk => It is a package which will implemnt different colors to the data displayed in the console
+            npm install chalk
+
+
+Local vs Global Package
+
+    Local Package
+        => Every Project is downloaded only once and it is shared by every projects 
+        =>Memory urtilizations is more
+        => Managing or management of the package is very difficult
+        =>Whenever the project is converted into package then it will also carry all the information about the local package that was downloaded
+
+    Global Package
+        => The Package is downloaded only once and it is shared by every project 
+        => Memory urtilizations is less
+        => Managing or management of the package is very easy 
+        =>Whenever the project is converted into package then it will not carry all the information about the local package that was downloaded
+
+Postman
+    What?
+    => It is a software/tool
+    => This tool/software is uded to manage the entire life cycle of a API.
+
+
+API
+    Application Programming Interface
+    => It is layer which accepts the request for Data and provides data as a response
+
+                Browser      API           Server
+        
+                Browsers send requests>>>  and receive    <<<response 
+        
+        HTTP Protocol
+        request - HTTP Message
+        response - HTML Document
+
+        SOAP Protocol
+        request -  SOAP Message(WSDL File)
+        response - XML
+
+    REST API - Stateless Protocol - Architecture
+    req - URL / API / REST API / etc...
+    res - JSON Documnet or any Other Data that is Supported.
+
+    ex placeholderapi, reqres api
+
+EXPRESS JS
+    What 
+    Why
+    How to install?
+    creating the server in Express - client and server connection
+
+EJS
+    What?
+    How to use EJS with NodeJS
+    Simple Demo Using EJS

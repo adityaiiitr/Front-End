@@ -53,7 +53,7 @@ JSON
 => it is used to store the data 
 => it is used to transport data from one end to another end
 =>  you can also manage the data using JSON
-=> It is similar to javascript objecrt but some difference are there
+=> It is similar to javascript object but some difference are there
 
     1. The key in json is enclosed in ' or "
     2. the key value pair is enclosed in {}
@@ -136,11 +136,45 @@ Arrow Function
     => You have Multiple Callback within another callback......
 
     Callback Hell
+    => It is a situation where user feels that the execution is from top to bottom
+    function a(function b(function c()))
+    triggered first === function a
+    executed first === function c
 
     Promise
+    => It was introduced to overcome the problem of callback hell
+    => It is a method which execute asynchronously
+    => it will deliver the solution/result no matter how much we need to wait 4 diff states in promise
+        pending = The promise is initialized and we are wiating for outcome
+        fulfilled = Promise has generated a success outcome
+        rejected = the promise has generated a failure outcome
+        settled = the promise is executed
+
+    2 Methods in Promise
+        then method => It is a step where we get to execute some logic based on the data we get.
+        catch method => to handle errors
+
+    let myPromise = new Promise(function(resolve,reject){
+        if(3>4){
+            resolve("Success")
+        }
+        else{
+            reject("Failure")
+        }
+    })
 
     Promise Chaining
 
     async and await
+
+    let myPromise = new Promise(async function(resolve,reject){
+        if(3>4){
+            resolve("Success")
+        }
+        else{
+            reject("Failure")
+        }
+    })
+    document.getElementById("myP").inner.html=await myPromise
 
     keyword

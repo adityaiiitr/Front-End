@@ -152,6 +152,8 @@ b = (arg1, aFunction = () => 5) => arg1 + aFunction()
 
 console.log(b(10)) //15 in console
 */
+
+/*
 //Callback Chaining
 a = () => 6
 b = fun2 => 5 + fun2
@@ -160,3 +162,35 @@ console.log(c(5, b, a)) //15 in console
 
 c = (() => console.log(6))
 console.log(c)
+
+*/
+/*
+//Promise
+
+let myPromise = new Promise(function (resolve, reject) {
+    if (3 > 4) {
+        resolve("Success")
+    }
+    else {
+        reject("Failure")
+    }
+}).catch(myError => console.log(myError))
+
+
+console.log(myPromise)
+*/
+
+
+// async and await
+async function cba() {
+    let myPromise = new Promise(function (resolve, reject) {
+        if (3 > 4) {
+            resolve("Success")
+        }
+        else {
+            reject("Failure")
+        }
+    }).catch(myError => console.log(myError)) //check it when we get undefined when it is rejected
+    document.getElementById("myP").innerHTML = await myPromise
+}
+
